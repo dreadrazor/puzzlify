@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image puzzle game</title>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js" ></script>
+	<script src="puzzle.js" ></script>
+	<link rel="stylesheet" href="puzzle.css" type="css/text"/>
+	<link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<h1>Welcome to the puzzle challenge</h1>
+	<h2>Find a picture online (or use one provided), press Puzzlify, and then try to recreate it from memory.</h2>
+	<h2>Click on the segments on the left side and then on the corresponding boxes in the right side.</h2>
+	<input type="text" placeholder="Link to image" id="target_image" value="http://24.media.tumblr.com/tumblr_mdbz9wj0jv1rekqu2o1_500.jpg"><input type = "button" id="puzzlify" value = "Puzzlify">
+	<div class="holder">
+		<div id="left">
+		</div>
+		<div id="right">
+		</div>
+	</div>
+	<h2 id="moves"></h2>
+</body>
+</html>

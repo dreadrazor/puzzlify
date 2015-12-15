@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+body
+{
+	float: left;
+	width: 100%;
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, circle farthest-corner, #CCCCCC 0%, #62C9EF 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, circle farthest-corner, #CCCCCC 0%, #62C9EF 100%);
+	
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, circle farthest-corner, #CCCCCC 0%, #62C9EF 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 413, color-stop(0, #CCCCCC), color-stop(1, #62C9EF));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, circle farthest-corner, #CCCCCC 0%, #62C9EF 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle farthest-corner at center, #CCCCCC 0%, #62C9EF 100%);
+	
+	font-family: Risque, Arial;
+	
+	padding: 0px 25px;
+}
+
+#left
+{
+	float: left;
+	margin-left: 100px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+#right
+{
+	float: right;
+	margin-right: 100px;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.holder{
+	width: 100%;
+	float: left;
+	margin: 50px 0px;
+}
+
+.selected
+{
+	border: 1px solid coral !important;
+}
+
+#left div, #right div
+{
+	border: 1px solid ghostwhite;
+}
+
+.cell
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+#target_image
+{
+	border-style: none;
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+	padding: 3px;
+	box-shadow: 3px 1px 0px grey;
+}
+
+#puzzlify
+{
+	border-radius: 5px;
+	background: lightcoral;
+	height: 36px;
+	vertical-align: top;
+}
